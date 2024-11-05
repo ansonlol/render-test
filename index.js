@@ -29,6 +29,9 @@ app.use(morgan((tokens, req, res) => {
   return log.join(' ');
 }));
 
+
+app.use(express.static('dist'))
+
 let phonebooks = [
     { 
       "id": "1",
